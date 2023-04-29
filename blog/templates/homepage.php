@@ -8,6 +8,7 @@
 
     <body>
         <h1>Le super blog de l'AVBN !</h1>
+        <h2>p1c5/soignez-cosmetique</h2>
         <p>Derniers billets du blog :</p>
 
         <?php
@@ -15,13 +16,13 @@
         ?>
             <div class="news">
                 <h3>
-                    <?php echo htmlspecialchars($post['title']); ?>
-                    <em>le <?php echo $post['french_creation_date']; ?></em>
+                    <?= htmlspecialchars($post['title']) ?>
+                    <em>le <?= $post['french_creation_date']; ?></em>
                 </h3>
                 <p>
-                    <?php
-                    // We display the post content.
-                    echo nl2br(htmlspecialchars($post['content']));
+                    <?=
+                        // We display the post content.
+                        nl2br(htmlspecialchars($post['content']));
                     ?>
                     <br />
                     <em><a href="#">Commentaires</a></em>
