@@ -8,6 +8,7 @@
 
     <body>
         <h1>Le super blog de l'AVBN !</h1>
+        <h2>p1c4/isolez-access-donnees - création d'un model</h2>
         <p>Derniers billets du blog :</p>
 
         <?php
