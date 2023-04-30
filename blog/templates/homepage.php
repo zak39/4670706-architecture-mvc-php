@@ -8,6 +8,7 @@
 
     <body>
         <h1>Le super blog de l'AVBN !</h1>
+        <h2>p2c2/affichez-commentaires - creation d'un nouveau controller, d'une nouvelle vue et des nouvelles fonctions pour le model</h2>
         <p>Derniers billets du blog :</p>
 
         <?php
@@ -21,7 +22,7 @@
                 <p>
                     <?= nl2br(htmlspecialchars($post['content'])); ?>
                     <br />
-                    <em><a href="#">Commentaires</a></em>
+                    <em><a href="post.php?id=<?= urlencode($post['identifier']) ?>">Commentaires</a></em>
                 </p>
             </div>
         <?php
