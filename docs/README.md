@@ -12,4 +12,5 @@
 6. Créer un layout pour plus de flexibilité : https://github.com/zak39/4670706-architecture-mvc-php/commit/631fefe180a095c3feec1f507d92df6375cbb780
 7. Créer un routeur pour aller vers le bon controller : https://github.com/zak39/4670706-architecture-mvc-php/commit/8ed8c5d7ebbf356132279a553d466aa3f2b8a234
 8. Ajout des commentaires et séparation du code technique du code métier : https://github.com/zak39/4670706-architecture-mvc-php/commit/4fa070b970681726f028974f2d27b176a9201a0b
+9. Gestion des erreurs dans le routeur : https://github.com/zak39/4670706-architecture-mvc-php/commit/19b3686a5be7275b616c81172880ba0e73447bb0
 
