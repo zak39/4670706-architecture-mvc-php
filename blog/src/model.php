@@ -40,11 +40,6 @@ function getPost($identifier) {
 
 function dbConnect()
 {
-    try {
-        $database = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'blog', 'password');
-
-        return $database;
-    } catch(Exception $e) {
-        die('Erreur : '.$e->getMessage());
-    }
+    $database = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'blog', 'password');
+    return $database;
 }
