@@ -14,3 +14,4 @@
 8. Ajout des commentaires et séparation du code technique du code métier : https://github.com/zak39/4670706-architecture-mvc-php/commit/4fa070b970681726f028974f2d27b176a9201a0b
 9. Gestion des erreurs dans le routeur : https://github.com/zak39/4670706-architecture-mvc-php/commit/19b3686a5be7275b616c81172880ba0e73447bb0
 10. Structurer les commentaires avec la POO : https://github.com/zak39/4670706-architecture-mvc-php/commit/f345c03d4251c0f01e1004c6bda2f40d1cd897b9
+11. Refactorisez le model Post en POO : https://github.com/zak39/4670706-architecture-mvc-php/commit/5952055f53ecc158b2775023447132c9c7c59e91
