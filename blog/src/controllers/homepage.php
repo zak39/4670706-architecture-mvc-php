@@ -4,7 +4,8 @@ require_once('src/model/post.php');
 
 function homepage()
 {
-    $posts = getPosts();
+    $postRespository = new PostRepository();
+    $posts = $postRespository->getPosts();
 
     require('templates/homepage.php');
 }
