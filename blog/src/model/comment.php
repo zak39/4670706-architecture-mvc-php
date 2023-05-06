@@ -11,6 +11,8 @@ class Comment
     public string $author;
     public string $frenchCreationDate;
     public string $comment;
+    public string $identifier;
+    public string $postId;
 }
 
 class CommentRepository
@@ -27,6 +29,7 @@ class CommentRepository
         $comments = [];
         while (($row = $statement->fetch())) {
             $comment = new Comment();
+            $comment->identifier = $row['id'];
             $comment->author = $row['author'];
             $comment->frenchCreationDate = $row['french_creation_date'];
             $comment->comment = $row['comment'];
@@ -35,6 +38,45 @@ class CommentRepository
         }
 
         return $comments;
+    }
+
+    public function getComment(string $id): Comment
+    {
+        $statement = $this->connection->getConnection()->prepare(
+            "SELECT id, post_id, author, comment, DATE_FORMAT(comment_date, '%d/%m/%Y à %Hh%imin%ss') AS french_creation_date
+            FROM comments
+            WHERE id = ?"
+        );
+        
+        $statement->execute([$id]);
+
+        $row = $statement->fetch();
+
+        $comment = new Comment();
+        $comment->identifier = $row['id'];
+        $comment->author = $row['author'];
+        $comment->frenchCreationDate = $row['french_creation_date'];
+        $comment->comment = $row['comment'];
+        $comment->postId = $row['post_id'];
+
+        return $comment;
+    }
+
+    public function updateComment(string $id, array $input): bool
+    {
+        $statement = $this->connection->getConnection()->prepare('
+            UPDATE comments
+            SET author = :author, comment = :comment
+            WHERE id = :id
+        ');
+
+        $queryIsExecuted = $statement->execute([
+            'author' => $input['author'],
+            'comment' => $input['comment'],
+            'id' => $id,
+        ]);
+
+        return $queryIsExecuted;
     }
 
     public function createComment(string $post, string $author, string $comment): bool
