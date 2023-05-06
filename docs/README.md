@@ -15,3 +15,4 @@
 9. Gestion des erreurs dans le routeur : https://github.com/zak39/4670706-architecture-mvc-php/commit/19b3686a5be7275b616c81172880ba0e73447bb0
 10. Structurer les commentaires avec la POO : https://github.com/zak39/4670706-architecture-mvc-php/commit/f345c03d4251c0f01e1004c6bda2f40d1cd897b9
 11. Refactorisez le model Post en POO : https://github.com/zak39/4670706-architecture-mvc-php/commit/5952055f53ecc158b2775023447132c9c7c59e91
+12. Creation de la classe Database (du chapitre sur la composition) : https://github.com/zak39/4670706-architecture-mvc-php/commit/835aefb426b05e04f29dcf88954ffac8587f65a4
