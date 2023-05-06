@@ -17,3 +17,4 @@
 11. Refactorisez le model Post en POO : https://github.com/zak39/4670706-architecture-mvc-php/commit/5952055f53ecc158b2775023447132c9c7c59e91
 12. Creation de la classe Database (du chapitre sur la composition) : https://github.com/zak39/4670706-architecture-mvc-php/commit/835aefb426b05e04f29dcf88954ffac8587f65a4
 13. Utiliser des namespaces dans notre projet : https://github.com/zak39/4670706-architecture-mvc-php/commit/ea2b66e888a8383f0ead2d48ae38f783e7190124
+14. Mon code sur la modification d'un commentaire (exercice seul) : https://github.com/zak39/4670706-architecture-mvc-php/commit/fb2c963b291f5a94170869f700052b1505dd3882
