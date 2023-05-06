@@ -12,18 +12,18 @@
     <form action="index.php?action=updateComment&id=<?= $comment->identifier ?>" method="post">
         <div>
             <label for="author">Auteur</label><br />
-            <input type="text" id="author" name="author" value="<?= $comment->author ?>"/>
+            <input type="text" id="author" name="author" value="<?= htmlspecialchars($comment->author) ?>"/>
         </div>
         <div>
             <label for="comment">Commentaire</label><br />
-            <textarea id="comment" name="comment"><?= $comment->comment ?></textarea>
+            <textarea id="comment" name="comment"><?= htmlspecialchars($comment->comment) ?></textarea>
         </div>
         <div>
             <label for="date">date</label><br />
-            <input type="text" id="date" name="date" value="<?= $comment->frenchCreationDate ?>" disabled />
+            <input type="text" id="date" name="date" value="<?= htmlspecialchars($comment->frenchCreationDate) ?>" disabled />
         </div>
 
-        <input type="hidden" name="postId" value="<?= $comment->postId ?>">
+        <input type="hidden" name="postId" value="<?= htmlspecialchars($comment->postId) ?>">
         <input type="submit" />
     </form>
 </div>
